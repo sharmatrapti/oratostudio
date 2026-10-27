@@ -1,4 +1,4 @@
-# Technical specification: MCP-only video pipeline
+# Technical specification: Oratostudio
 
 **Status:** draft for discussion, 2026-10-27. Binding decisions are in `04-decisions-mcp-only-pipeline.md`; requirements (FR-n) in `06-product-requirements.md`; stages in `05-roadmap.md`. Sections marked **proposed** are concrete proposals for the open points and need confirmation before the stage that uses them starts. This document is updated at the start of every stage.
 
@@ -32,7 +32,7 @@ Principles (from `04-decisions`):
 ## 2. Repository layout
 
 ```
-createstudio/
+oratostudio/
   docs/                         this folder
   packages/
     scene-schema/               zod schema, JSON Schema export, vocabulary, slot tables, resolvers
@@ -45,7 +45,7 @@ createstudio/
   package.json  pnpm-workspace.yaml  tsconfig.base.json  vitest.workspace.ts
 ```
 
-Package dependencies flow one way: `mcp-server -> render-host -> renderer` (bundle output only) and everyone `-> scene-schema`. `assets` is data.
+Published package names carry the scope: `@oratostudio/scene-schema`, `@oratostudio/renderer`, `@oratostudio/render-host`, `@oratostudio/mcp-server`. Package dependencies flow one way: `mcp-server -> render-host -> renderer` (bundle output only) and everyone `-> scene-schema`. `assets` is data.
 
 Tooling: TypeScript 5 strict, Node 22, pnpm, vitest, tsup for Node packages, Vite for the renderer bundle, eslint + prettier, zod 3, `@modelcontextprotocol/sdk`, `playwright` (with `channel: 'chrome'`), `ffmpeg-static`, `mp4-muxer`, `webm-muxer`, `pixelmatch` + `pngjs` for golden tests, `ws` for the raw-frame channel.
 
@@ -267,7 +267,7 @@ Overlaps between an element and its own stack siblings, or anything with `full-b
 
 ## 6. MCP server (`packages/mcp-server`)
 
-Transport: stdio (`@modelcontextprotocol/sdk`), one server per client session. The server keeps one open project at a time (`project_open` switches). Tool input schemas are generated from zod. Every tool returns `content: [{type:'text', text: JSON}]` plus, for previews, `{type:'image', data, mimeType:'image/png'}`.
+Server name `oratostudio`. Transport: stdio (`@modelcontextprotocol/sdk`), one server per client session. The server keeps one open project at a time (`project_open` switches). Tool input schemas are generated from zod. Every tool returns `content: [{type:'text', text: JSON}]` plus, for previews, `{type:'image', data, mimeType:'image/png'}`.
 
 ### 6.1 Tools (proposed, 14 for Milestone 1)
 

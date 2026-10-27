@@ -1,4 +1,4 @@
-# Decisions: MCP-only video pipeline
+# Decisions: Oratostudio (MCP-only video pipeline)
 
 **Status:** agreed, 2026-10-27. Follows `03-createstudio-internals-and-own-pipeline.md`. This is the decision log for development; when a decision changes, edit it here and date the change.
 
@@ -117,7 +117,11 @@ Software WebGL (SwiftShader) is a speed cost, not a blocker: milestone 1 (text, 
 
 ## D10. Product name: Oratostudio
 
-**Decision (2026-10-27):** The product is called **Oratostudio** (Orato, Latin "I speak", plus studio). Package scope `@oratostudio/*`, MCP server name `oratostudio`, repo name `oratostudio`. Checked free on npm; `.com`, `.ai` and `.dev` had no DNS record at the time; trademarks and social handles not checked. The folder `D:\workspaces\createstudio` keeps its name until the repo is created (D11 pending: git).
+**Decision (2026-10-27):** The product is called **Oratostudio** (Orato, Latin "I speak", plus studio). Package scope `@oratostudio/*`, MCP server name `oratostudio`, repo name `oratostudio`. Checked free on npm; `.com`, `.ai` and `.dev` had no DNS record at the time; trademarks and social handles not checked. Package folders keep short names (`packages/scene-schema`), published names carry the scope (`@oratostudio/scene-schema`).
+
+## D11. Repository
+
+**Decision (2026-10-27):** Oratostudio has its own repository at `D:\workspaces\oratostudio`, remote `https://github.com/sharmatrapti/oratostudio`, default branch `main`. The earlier `D:\workspaces\createstudio` folder is a leftover copy of the docs and is not maintained.
 
 ## Milestone 1 acceptance
 

@@ -1,4 +1,4 @@
-# Implementation plan: MCP-only video pipeline
+# Implementation plan: Oratostudio
 
 **Status:** draft for approval, 2026-10-27. Executes `05-roadmap.md` against `07-technical-spec.md`. Work packages (WP) are ordered; each names the files it creates, what it does, and the proof that it is done. No dates. Stages 0 and 1 are planned in full because they are next; later stages are outlined and will be expanded when their stage opens.
 
@@ -14,11 +14,11 @@
 | ffmpeg | 8.1 full build on PATH, has `h264_nvenc`, `libx264`, `libvpx-vp9`, `aac` | Use the system ffmpeg when present; `ffmpeg-static` only as a fallback for other machines. NVENC on rung 3 is available on this laptop. |
 | Chrome | `C:\Program Files\Google\Chrome\Application\chrome.exe` | Playwright `channel: 'chrome'` will find it |
 | GPU | GeForce GTX 1650 Ti, driver 457.49 | Old driver. If the probe reports SwiftShader, a driver update is the first thing to try before the headed-offscreen fallback. |
-| Repo | `D:\workspaces\createstudio` is an untracked folder inside the `D:\workspaces` git repo; contains only `docs/` | Needs its own repo (WP 0.1) |
+| Repo | `D:\workspaces\oratostudio`, own git repo, remote `github.com/sharmatrapti/oratostudio`, contains `docs/` and README | WP 0.1 adds the workspace on top of it |
 
 ## 2. Decisions needed before WP 0.1 (defaults in bold)
 
-1. **Git:** make `createstudio` its own repository (`git init` inside the folder) and add it to the parent repo's `.gitignore`. Alternative: commit it as a subfolder of `D:\workspaces`, which mixes it with unrelated projects.
+1. **Git:** done (D11). Own repository at `D:\workspaces\oratostudio`.
 2. **Spec open items** (spec section 13, PRD section 11): proceed with the proposals as written. Any of them can change later without rework because they are data (slot JSON, vocabulary tables, tool descriptions).
 3. **TTS and STT:** edge-tts and faster-whisper first. Only matters from Stage 3.
 4. **First character brief:** not needed until Stage 2 engine work; the art track can start whenever the brief is ready.
@@ -39,7 +39,7 @@ Once you say go, I proceed with the defaults and record them in `04-decisions`.
 
 ### WP 0.1 Repository bootstrap
 **Creates:** `package.json`, `pnpm-workspace.yaml`, `tsconfig.base.json`, `vitest.workspace.ts`, `.gitignore`, `.editorconfig`, `.prettierrc`, `eslint.config.js`, `packages/*/package.json` skeletons (`scene-schema`, `renderer`, `render-host`, `mcp-server`, `assets`), `fixtures/`, `scripts/`, `README.md`.
-**Does:** git init; pnpm workspace; strict TS; tsup build for Node packages; vitest with `unit`, `browser`, `e2e` tags; `pnpm test`, `pnpm build`, `pnpm lint` scripts; `engines >= 20`.
+**Does:** pnpm workspace in the existing repo; strict TS; tsup build for Node packages; vitest with `unit`, `browser`, `e2e` tags; `pnpm test`, `pnpm build`, `pnpm lint` scripts; `engines >= 20`.
 **Proof:** fresh clone, `pnpm install && pnpm build && pnpm test` green with one placeholder test per package.
 
 ### WP 0.2 Scene schema and resolver
@@ -67,7 +67,7 @@ Once you say go, I proceed with the defaults and record them in `04-decisions`.
 
 ### WP 1.0 Thin vertical slice
 **Creates:** `packages/mcp-server/src/{server.ts, project.ts, history.ts, tools/{project_open.ts, element_add.ts, render_video.ts, render_probe.ts}, index.ts}`, `.mcp.json` at repo root, first Fabric-based renderer (`text` only, no animation).
-**Does:** MCP server over stdio; project folder create and open; `scene.json` atomic write and history snapshot; `element_add` for text in a slot; `render_video` draft via the ladder; `render_probe`. Registered in `.mcp.json` so Claude Code in this repo can call it.
+**Does:** MCP server over stdio; project folder create and open; `scene.json` atomic write and history snapshot; `element_add` for text in a slot; `render_video` draft via the ladder; `render_probe`. Registered in `.mcp.json` as `oratostudio` so Claude Code in this repo can call it.
 **Proof:** in Claude Code: "open a project at fixtures/out/slice, add a title saying Hello in title-center, render a draft" produces an MP4 with the text. The in-process tool-contract test does the same without a model.
 
 ### WP 1.1 Renderer elements

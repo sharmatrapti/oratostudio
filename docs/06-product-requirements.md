@@ -1,4 +1,4 @@
-# Product requirements: MCP-only video pipeline
+# Product requirements: Oratostudio
 
 **Status:** draft for discussion, 2026-10-27. Decisions in `04-decisions-mcp-only-pipeline.md` are binding; this document states what the product must do. Stages are in `05-roadmap.md`; how it is built is in `07-technical-spec.md`.
 
@@ -6,7 +6,7 @@
 
 ## 1. One-paragraph description
 
-A Model Context Protocol (MCP) server that lets a user create and edit animated marketing and explainer videos by talking to Claude. There is no visual editor. The user describes the video; Claude writes a scene description and calls the server's tools; the server validates, lays out, previews and renders. Edits are prompts ("make the title bigger", "put the character on the right"). The output is an MP4 (or alpha WebM) on disk. Characters, animations, templates and styles are our own.
+Oratostudio (Orato: Latin "I speak") is a Model Context Protocol (MCP) server that lets a user create and edit animated marketing and explainer videos by talking to Claude. There is no visual editor. The user describes the video; Claude writes a scene description and calls the server's tools; the server validates, lays out, previews and renders. Edits are prompts ("make the title bigger", "put the character on the right"). The output is an MP4 (or alpha WebM) on disk. Characters, animations, templates and styles are our own.
 
 ## 2. Who it is for
 

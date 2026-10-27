@@ -1,6 +1,6 @@
-# Roadmap: MCP-only video pipeline
+# Roadmap: Oratostudio
 
-**Status:** draft for discussion, 2026-10-27. Implements the decisions in `04-decisions-mcp-only-pipeline.md`. Requirements live in `06-product-requirements.md`, design in `07-technical-spec.md`.
+**Status:** draft for discussion, 2026-10-27. Oratostudio is the MCP-only video pipeline; this roadmap implements the decisions in `04-decisions-mcp-only-pipeline.md`. Requirements live in `06-product-requirements.md`, design in `07-technical-spec.md`.
 
 This roadmap is ordered by stages, not dates. Each stage has a goal, what it delivers, and an exit gate. A stage is done when its gate passes, not when its work is "mostly there". Stages run in order unless marked parallel.
 
