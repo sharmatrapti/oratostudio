@@ -1,6 +1,6 @@
 # Implementation plan: Oratostudio
 
-**Status:** draft for approval, 2026-10-27. Executes `05-roadmap.md` against `07-technical-spec.md`. Work packages (WP) are ordered; each names the files it creates, what it does, and the proof that it is done. No dates. Stages 0 and 1 are planned in full because they are next; later stages are outlined and will be expanded when their stage opens.
+**Status:** draft, 2026-10-27, awaiting review before any work package starts. Implementation has not begun. Executes `05-roadmap.md` against `07-technical-spec.md`. Work packages (WP) are ordered; each names the files it creates, what it does, and the proof that it is done. No dates. Stages 0 and 1 are planned in full because they are next; later stages are outlined and will be expanded when their stage opens.
 
 ---
 
