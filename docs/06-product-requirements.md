@@ -52,7 +52,7 @@ Video tools are editors. Editors are slow for people who already know what they 
 3. User: "Undo the logo move." Claude calls `history_undo`.
 
 ### J3. Character scene (Stage 2+)
-1. User: "Add Priya on the left, waving, then explaining the three bullets."
+1. User: "Add Nikki on the left, waving, then explaining the three bullets."
 2. Claude adds a `character2d` element in `character-left` with actions `wave` then `talk`, timed `with vo1`, and the bullet list stacked in `split-right`.
 
 ### J4. Final delivery
@@ -176,11 +176,6 @@ Plus: "Undo the last change" restores the previous snapshot.
 - Right-to-left and complex-script text shaping.
 - Background removal (ONNX) and green-screen; a possible Stage 7 effect.
 
-## 11. Open questions (to settle in discussion)
+## 11. Open questions
 
-Carried from `04-decisions`, with proposals in `07-technical-spec.md` where marked:
-1. Final tool list and names (spec section 6, proposed).
-2. Slot table values per aspect ratio (spec section 5.2, proposed).
-3. Which TTS and STT first: proposal is edge-tts and faster-whisper, both free and local or free-tier.
-4. First character: look, name, action list, target render size.
-5. Whether `shape` is in Milestone 1 (proposal: yes, rectangles and rounded rectangles only; they are the cheapest way to make lower-thirds and callouts look designed).
+All settled on 2026-10-27, see `04-decisions` D12 and D13: tool list, slot tables, vocabulary, shapes (rectangles only in Milestone 1), draft and preview sizes, TTS and STT (edge-tts, faster-whisper). The first character is named Nikki; her look, action list and render size are designed when Stage 2 opens.

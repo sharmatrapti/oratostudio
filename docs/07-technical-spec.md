@@ -385,10 +385,10 @@ Audio runs in parallel with the frame loop.
 
 ### 9.1 Characters (Stage 2)
 
-Folder `packages/assets/characters/<name>/`: `info.json`, `high.webm` (2160 square), `mid.webm` (1080), `low.webm` (540), `thumbnail.png`, `LICENSE`. `info.json`:
+Folder `packages/assets/characters/<name>/` (first character: `nikki`): `info.json`, `high.webm` (2160 square), `mid.webm` (1080), `low.webm` (540), `thumbnail.png`, `LICENSE`. `info.json`:
 
 ```json
-{ "name": "priya", "fps": 30, "size": {"width": 2160, "height": 2160},
+{ "name": "nikki", "fps": 30, "size": {"width": 2160, "height": 2160},
   "actions": {
     "idle":  {"start": 0.0,  "end": 4.0,  "loop": {"start": 0.0, "end": 4.0}, "default": true},
     "talk":  {"start": 4.0,  "end": 9.0,  "loop": {"start": 4.5, "end": 8.5}},
@@ -440,11 +440,6 @@ A template is a project folder zipped with `template.json` `{name, description, 
 - No network calls during render. TTS and STT providers are called only by their tools, with keys from environment variables, never stored in the project.
 - `packages/assets` carries a `LICENSE` per subfolder. Nothing from the vendor's library is checked in; the CDP discovery scripts stay in `docs/discovery-4.0` as research and are not imported by any package.
 
-## 13. Open items for confirmation
+## 13. Confirmed items
 
-1. Tool names and count in 6.1 (14 for M1).
-2. Slot values in 5.2.
-3. Vocabulary in 3.4, especially the preset and transition names.
-4. `shape` in Milestone 1 (rect and rounded only).
-5. First character brief (name, look, action list, sizes) for 9.1.
-6. Draft resolution 480p, preview width 960.
+Accepted on 2026-10-27 (`04-decisions` D12): tool names and count in 6.1 (14 for M1); slot values in 5.2; vocabulary in 3.4; `shape` limited to rect and rounded in Milestone 1; draft resolution 480p and preview width 960; edge-tts and faster-whisper first. The sections above are no longer marked proposed. First character: Nikki (D13); her brief is written into 9.1 when Stage 2 opens.

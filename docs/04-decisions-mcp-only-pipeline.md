@@ -123,15 +123,20 @@ Software WebGL (SwiftShader) is a speed cost, not a blocker: milestone 1 (text, 
 
 **Decision (2026-10-27):** Oratostudio has its own repository at `D:\workspaces\oratostudio`, remote `https://github.com/sharmatrapti/oratostudio`, default branch `main`. The earlier `D:\workspaces\createstudio` folder is a leftover copy of the docs and is not maintained.
 
+## D12. Spec proposals accepted
+
+**Decision (2026-10-27):** The proposals in `07-technical-spec.md` are accepted as written: the 14 Milestone 1 tools with `history` as one tool (spec 6.1); the slot tables for 16:9, 9:16 and 1:1 (spec 5.2), to be tuned by eye with the overlay once `render_frame` exists; the vocabulary (spec 3.4); `shape` limited to rect and rounded in Milestone 1; drafts at 480p and previews 960 wide; edge-tts for TTS and faster-whisper for STT first, both behind swappable interfaces.
+
+## D13. First character: Nikki
+
+**Decision (2026-10-27):** The first character is named **Nikki**. Her look, personality, action list and render sizes are designed together when Stage 2 opens; the art track starts from that brief. Until then docs use `nikki` as the asset id.
+
 ## Milestone 1 acceptance
 
 - `render_probe` on the dev laptop reports a real GPU renderer and hardware H.264 encode; a 10 s 1080p30 render finishes faster than real time. If a rung of the ladder fails, the probe names it and the measured time is recorded here, not assumed.
 - Ten natural-language edits ("make the title bigger", "put the character on the right", "caption at the bottom", ...) each resolve in one tool call with no pixel numbers, and `layout_report` shows zero overlaps afterwards.
 - Doc 01's M0 test video renders end to end through the MCP server.
 
-## Open points (to discuss next)
+## Open points
 
-- Final list and names of the about 10 tools.
-- Slot table values per aspect ratio.
-- Which TTS and STT to wire first.
-- First character: look and action list.
+None as of 2026-10-27. Next: Nikki's design brief when Stage 2 opens.

@@ -78,7 +78,7 @@ flowchart LR
 
 ## Stage 2: 2D characters (Milestone 2)
 
-**Goal:** a character of our own, authored in Blender, acts on screen and is controlled by prompts ("have Priya wave, then talk").
+**Goal:** a character of our own, authored in Blender, acts on screen and is controlled by prompts ("have Nikki wave, then talk").
 
 **Runs in parallel with Stage 1:** the character brief (look, action list, render settings) and the Blender work start as soon as the brief is agreed. The engine side lands in this stage.
 
@@ -122,7 +122,7 @@ flowchart LR
 - Amplitude lip-sync (doc 03 section 4): RMS per 1/60 s, moving average, multiplier, clamp. For 2D characters this gates between `talk` and `idle` loops; the same curve drives a `Mouth_Open` morph target when 3D arrives.
 
 **Exit gate**
-- "Make a 20 s explainer about X with Priya narrating" produces a video where the mouth moves only while speech is audible.
+- "Make a 20 s explainer about X with Nikki narrating" produces a video where the mouth moves only while speech is audible.
 - Switching the TTS provider changes nothing else in the scene.
 
 ---

@@ -19,11 +19,11 @@
 ## 2. Decisions needed before WP 0.1 (defaults in bold)
 
 1. **Git:** done (D11). Own repository at `D:\workspaces\oratostudio`.
-2. **Spec open items** (spec section 13, PRD section 11): proceed with the proposals as written. Any of them can change later without rework because they are data (slot JSON, vocabulary tables, tool descriptions).
-3. **TTS and STT:** edge-tts and faster-whisper first. Only matters from Stage 3.
-4. **First character brief:** not needed until Stage 2 engine work; the art track can start whenever the brief is ready.
+2. **Spec open items:** accepted as written (D12).
+3. **TTS and STT:** edge-tts and faster-whisper first (D12).
+4. **First character:** named Nikki (D13); her brief is designed when Stage 2 opens, and the art track starts then.
 
-Once you say go, I proceed with the defaults and record them in `04-decisions`.
+Nothing is open. Work starts with WP 0.1 on your go.
 
 ## 3. Working agreement
 
