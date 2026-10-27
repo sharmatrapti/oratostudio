@@ -132,5 +132,5 @@ Until our character library exists, CreateStudio 4.0 driven over CDP is the fast
 ---
 
 ## Appendix: evidence locations
-- Bundles: extracted and de-obfuscated copies in the session scratchpad (`asar4/`), script `dejoin.py`. Render worker report, asset-format report and the on-disk samples (`resources/jb4sel4zyc`, `pwac-pw8ek`, `72uirugdcm`, `ezvn9j65xt` under the CreateStudio4 data folder, now on `D:\apps\CreateStudio4-data` behind a junction).
+- Bundles: extracted and de-obfuscated copies in the session scratchpad (`asar4/`), script `dejoin.py`. The scratchpad is temporary; our helper scripts are kept in `docs/discovery-4.0/tools/` (vendor code is not). Render worker report, asset-format report and the on-disk samples (`resources/jb4sel4zyc`, `pwac-pw8ek`, `72uirugdcm`, `ezvn9j65xt` under the CreateStudio4 data folder, now on `D:\apps\CreateStudio4-data` behind a junction).
 - Live probes: `docs/discovery-4.0/` (`cdp-probe4.js`, `cdp-eval.js`, JSON dumps).
