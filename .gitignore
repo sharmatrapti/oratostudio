@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.turbo/
+*.log
+.env
+.env.*
+renders/
+fixtures/out/
+.DS_Store
+Thumbs.db

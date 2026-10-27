@@ -1,0 +1,21 @@
+[
+ {
+  "description": "",
+  "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:9223/devtools/page/5795F2C0738515DFE3F6AA56D1EF55D9",
+  "id": "5795F2C0738515DFE3F6AA56D1EF55D9",
+  "title": "CreateStudio 4",
+  "type": "page",
+  "url": "file:///dashboard",
+  "webSocketDebuggerUrl": "ws://127.0.0.1:9223/devtools/page/5795F2C0738515DFE3F6AA56D1EF55D9"
+ },
+ {
+  "description": "",
+  "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:9223/devtools/page/24CDE6401C7657A8433705CFE0CFC940",
+  "id": "24CDE6401C7657A8433705CFE0CFC940",
+  "parentId": "5795F2C0738515DFE3F6AA56D1EF55D9",
+  "title": "https://www.youtube.com/embed/1fB0iSjriDg?si=ebHXnw91TBi4cGLX",
+  "type": "iframe",
+  "url": "https://www.youtube.com/embed/1fB0iSjriDg?si=ebHXnw91TBi4cGLX",
+  "webSocketDebuggerUrl": "ws://127.0.0.1:9223/devtools/page/24CDE6401C7657A8433705CFE0CFC940"
+ }
+]

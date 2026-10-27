@@ -1,0 +1,931 @@
+{
+ "project": {
+  "settings": {
+   "width": 1920,
+   "height": 1080,
+   "duration": 14400,
+   "title": "Project Name",
+   "background": "#ffffff",
+   "autosave": true,
+   "autosaveFrequency": 5
+  },
+  "tracks": [
+   {
+    "id": "3e9ef8fe-069b-4dc7-91d7-78f05ace3d47",
+    "elements": []
+   },
+   {
+    "id": "02c6378e-cc3b-4821-8c4c-2daec95a593e",
+    "elements": []
+   },
+   {
+    "id": "9e315ff1-8997-4b96-acd0-a83eceb45771",
+    "elements": []
+   },
+   {
+    "id": "7557f01a-61b0-4b23-81f1-1e279ca6cab9",
+    "elements": []
+   }
+  ],
+  "cameraEnabled": false,
+  "camera": [
+   {
+    "startingNode": true,
+    "time": 0,
+    "to": {
+     "width": 1920,
+     "height": 1080,
+     "left": 0,
+     "top": 0,
+     "scaleX": 1,
+     "scaleY": 1,
+     "angle": 0
+    }
+   }
+  ],
+  "media": [],
+  "ui": {
+   "editorResolution": "low",
+   "timelineHeight": 341,
+   "canvasGrid": false,
+   "canvasSnapping": true,
+   "timelineSnapping": true,
+   "timeline": {
+    "scale": 0.5
+   }
+  }
+ },
+ "track": {
+  "name": "Track",
+  "elements": []
+ },
+ "group": {
+  "objType": "group",
+  "name": "Group",
+  "objectCaching": false,
+  "originX": 0.5,
+  "originY": 0.5,
+  "left": 0,
+  "top": 0,
+  "angle": 0,
+  "scaleX": 1,
+  "scaleY": 1,
+  "scaleLocked": true,
+  "skewLocked": true,
+  "radiusLocked": true,
+  "opacity": 1,
+  "skewX": 0,
+  "skewY": 0,
+  "animations": [],
+  "tracks": [],
+  "quickEdit": []
+ },
+ "camera": {
+  "objType": "camera",
+  "canBeMask": false,
+  "name": "Camera",
+  "animations": [],
+  "timeline": {
+   "start": 0,
+   "duration": 5
+  }
+ },
+ "carouselItem": {
+  "transitionEase": "power2.inOut",
+  "transitionDuration": 1.1,
+  "stayDuration": 0.6,
+  "scalingType": "zoom",
+  "fitPadding": 0
+ },
+ "element": {
+  "_thumbLeft": 0,
+  "_renameMode": false,
+  "paintFirst": "fill",
+  "objectCaching": false,
+  "originX": 0.5,
+  "originY": 0.5,
+  "left": 0,
+  "top": 0,
+  "angle": 0,
+  "scaleX": 1,
+  "scaleY": 1,
+  "scaleFactor": 1,
+  "scaleLocked": true,
+  "skewLocked": true,
+  "radiusLocked": true,
+  "opacity": 1,
+  "skewX": 0,
+  "skewY": 0,
+  "strokeUniform": true,
+  "stroke": "#aaaaaa",
+  "strokeWidth": 0,
+  "strokeDashArray": [
+   0,
+   0
+  ],
+  "strokeLineCap": "butt",
+  "shadowColor": "rgba(0,0,0,0.5)",
+  "shadowBlur": 0,
+  "shadowAngle": 135,
+  "shadowDistance": 0,
+  "shadowOffsetX": 0,
+  "shadowOffsetY": 0,
+  "shadowNonScaling": false,
+  "timeline": {
+   "start": 0,
+   "duration": 0,
+   "startingTime": 0
+  },
+  "animations": [],
+  "effects": [],
+  "svgParams": {},
+  "webglParams": {},
+  "fadeControlsVisible": false,
+  "extendedClipRenderMode": "default"
+ },
+ "image": {
+  "objType": "image-extended",
+  "canBeMask": false,
+  "name": "Image",
+  "fullSize": true,
+  "shouldRenderFill": true
+ },
+ "imageCanvas": {
+  "objType": "image-canvas",
+  "canBeMask": false,
+  "name": "Free Drawing",
+  "shouldRenderFill": true
+ },
+ "video": {
+  "objType": "video",
+  "canBeMask": false,
+  "name": "Video",
+  "fullSize": true,
+  "volume": 1,
+  "fadeIn": 0,
+  "fadeOut": 0,
+  "playbackRate": 1,
+  "useTempCanvasWithFilters": true
+ },
+ "audio": {
+  "objType": "audio",
+  "canBeMask": false,
+  "name": "Audio",
+  "fitToCanvas": false,
+  "volume": 1,
+  "fadeIn": 0,
+  "fadeOut": 0,
+  "playbackRate": 1
+ },
+ "sprite": {
+  "objType": "sprite",
+  "canBeMask": false,
+  "name": "Sprite",
+  "fitToCanvas": true
+ },
+ "text": {
+  "objType": "i-text-extended",
+  "canBeMask": true,
+  "name": "Your Text",
+  "text": "Your Text",
+  "font": {
+   "family": {
+    "name": "Archivo Black",
+    "folder": "Archivo-Black",
+    "variants": [
+     {
+      "name": "Regular",
+      "file": "ArchivoBlack-Regular.ttf"
+     }
+    ]
+   },
+   "variant": {
+    "name": "Regular",
+    "file": "ArchivoBlack-Regular.ttf"
+   }
+  },
+  "fontFamily": "Archivo Black Regular",
+  "cursorWidth": 3,
+  "textAlign": "center",
+  "fontSize": 80,
+  "underline": false,
+  "overline": false,
+  "linethrough": false,
+  "fill": "#000000",
+  "charSpacing": 10,
+  "lineHeight": 1.2,
+  "textDirection": "ltr",
+  "perPixelTargetFind": false
+ },
+ "shape": {
+  "objType": "shape",
+  "canBeMask": true,
+  "name": "Shape",
+  "fill": "#0065ff",
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "svgShape": {
+  "objType": "svgShape",
+  "canBeMask": true,
+  "name": "Shape",
+  "fill": "#0065ff",
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "svgResourceShape": {
+  "objType": "svgResourceShape",
+  "canBeMask": true,
+  "name": "Shape",
+  "fill": "#0065ff",
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "invertedShape": {
+  "objType": "inverted-shape",
+  "canBeMask": false,
+  "name": "Spotlight",
+  "width": 400,
+  "height": 400,
+  "strokeWidth": 0,
+  "fill": "transparent",
+  "colorInvertFill": "rgba(30,30,30,1)",
+  "opacityInvertFill": 0.8,
+  "invertFillOffsetX": 10000,
+  "invertFillOffsetY": 10000,
+  "shapeType": "ellipse",
+  "edgeFeather": 0,
+  "cornerRadius": 0,
+  "perPixelTargetFind": false,
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "svg": {
+  "objType": "svg",
+  "canBeMask": true,
+  "name": "SVG",
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "rect": {
+  "objType": "rect",
+  "canBeMask": true,
+  "name": "Rect",
+  "width": 400,
+  "height": 300,
+  "fill": "#0065ff",
+  "opacity": 0.5
+ },
+ "roundedRect": {
+  "objType": "rounded-rect",
+  "canBeMask": true,
+  "name": "Rounded Rect",
+  "width": 1920,
+  "height": 1080,
+  "fill": "#0065ff",
+  "opacity": 1,
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2,
+  "tlCornerRadius": 0,
+  "trCornerRadius": 0,
+  "brCornerRadius": 0,
+  "blCornerRadius": 0,
+  "roundedRectUniform": true
+ },
+ "roundedRectSquare": {
+  "objType": "rounded-rect",
+  "canBeMask": true,
+  "isSquare": true,
+  "name": "Square",
+  "width": 1080,
+  "height": 1080,
+  "fill": "#0065ff",
+  "opacity": 1,
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2,
+  "tlCornerRadius": 0,
+  "trCornerRadius": 0,
+  "brCornerRadius": 0,
+  "blCornerRadius": 0,
+  "roundedRectUniform": true
+ },
+ "triangle": {
+  "objType": "triangle",
+  "canBeMask": true,
+  "name": "Triangle",
+  "fill": "#0065ff",
+  "width": 800,
+  "height": 800,
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "circle": {
+  "objType": "circle",
+  "canBeMask": true,
+  "name": "Circle",
+  "radius": 400,
+  "fill": "#0065ff",
+  "startAngle": 0,
+  "endAngle": 6.283185307179586,
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "arc": {
+  "objType": "arc",
+  "canBeMask": true,
+  "name": "Arc",
+  "stroke": "#3676c9",
+  "strokeWidth": 40,
+  "radius": 400,
+  "fill": "rgba(0,0,0,0)",
+  "angle": 0,
+  "startAngle": -1.5707963267948966,
+  "endAngle": 2.6179938779914944,
+  "strokeLineCap": "round",
+  "fitToCanvas": true,
+  "fitToCanvasPadding": 0.2
+ },
+ "path": {
+  "objType": "path",
+  "canBeMask": true,
+  "name": "Path",
+  "path": "M 100 100 L 200 200",
+  "stroke": "#3676c9",
+  "strokeWidth": 3,
+  "fill": "transparent",
+  "perPixelTargetFind": false
+ },
+ "progressBar": {
+  "objType": "progress-bar",
+  "canBeMask": false,
+  "name": "Progress Bar",
+  "width": 500,
+  "height": 50,
+  "fill": "#00BB7B",
+  "progressBackgroundColor": "#262626",
+  "cornerRadiusPercent": 0,
+  "stroke": "#483E3D",
+  "strokeWidth": 0,
+  "patternStrokeWidth": 0,
+  "patternStrokeColor": "#42D3B6",
+  "progressAt": 100,
+  "paintFirst": "stroke",
+  "fullWidth": true,
+  "moveToBottom": true
+ },
+ "grid": {
+  "objType": "grid",
+  "canBeMask": false,
+  "name": "Grid",
+  "width": 700,
+  "height": 700
+ },
+ "carousel": {
+  "objType": "carousel",
+  "canBeMask": false,
+  "name": "Carousel",
+  "width": 800,
+  "height": 600
+ },
+ "carouselNew": {
+  "objType": "carousel-new",
+  "canBeMask": false,
+  "name": "Carousel",
+  "width": 800,
+  "height": 600
+ },
+ "deviceComponent": {
+  "objType": "device-component",
+  "canBeMask": false,
+  "name": "Device",
+  "width": 500,
+  "height": 500
+ },
+ "audioVisualizer": {
+  "objType": "audio-visualizer",
+  "canBeMask": false,
+  "name": "Audio Visualizer",
+  "width": 500,
+  "height": 100
+ },
+ "arrow": {
+  "objType": "arrow",
+  "canBeMask": false,
+  "name": "Arrow",
+  "headArrowType": "arrow",
+  "tailArrowType": "circle",
+  "headRadiusFactor": 2,
+  "tailRadiusFactor": 2,
+  "width": 400,
+  "height": 0,
+  "strokeWidth": 10,
+  "strokeUniform": false
+ },
+ "chart": {
+  "objType": "chart",
+  "width": 300,
+  "height": 300
+ },
+ "effects": {
+  "overlay": {
+   "colorOverlayOpacity": 1,
+   "colorOverlayValue": "yellow",
+   "inOverlay": false,
+   "inOverlayDuration": 1,
+   "outOverlay": false,
+   "outOverlayDuration": 1
+  },
+  "green-screen": {
+   "chromaFilterSimilarity": 0.05,
+   "chromaFilterSmoothness": 0,
+   "chromaFilterSpill": 0
+  },
+  "sharpness": {
+   "sharpness": 0.1
+  },
+  "glitch": {
+   "flowLineIterations": 5,
+   "shiftLineIterations": 100,
+   "strengthShift": 1,
+   "shiftRGBIterations": 1,
+   "scatIterations": 5,
+   "strengthScatter": 1,
+   "glitchFrequency": 25,
+   "inGlitch": false,
+   "inGlitchDuration": 1,
+   "outGlitch": false,
+   "outGlitchDuration": 1
+  },
+  "blur": {
+   "blurValue": 10,
+   "inBlur": false,
+   "inBlurDuration": 1,
+   "outBlur": false,
+   "outBlurDuration": 1,
+   "blurReverse": false
+  },
+  "hue": {
+   "hueRotation": 0,
+   "inHue": false,
+   "inHueDuration": 1,
+   "outHue": false,
+   "outHueDuration": 1
+  },
+  "turbulence": {
+   "turbulenceScale": 0.025,
+   "turbulenceFrequency": 0.05,
+   "turbulenceAngle": 135,
+   "turbulenceSpeed": 11,
+   "turbulenceDeltaX": 6.3639610306789285,
+   "turbulenceDeltaY": 6.363961030678928,
+   "turbulenceOffsetX": 0,
+   "turbulenceOffsetY": 0
+  },
+  "jittering": {
+   "jitterStrength": 20,
+   "jitterScale": 0.265,
+   "jitterFrequency": 2.375,
+   "jitterSpeed": 10
+  },
+  "wave": {
+   "waveWarpWidth": 20,
+   "waveWarpHeight": 5,
+   "waveWarpDirection": 0,
+   "waveWarpPhase": 0,
+   "waveSpeed": 20
+  },
+  "filters": {},
+  "color-correction": {
+   "colorGamma": 0,
+   "colorContrast": 0,
+   "colorBrightness": 0,
+   "colorSaturation": 0
+  },
+  "color-remove": {
+   "colorRemovalDistance": 0.05
+  },
+  "color-replace": {
+   "hueRotationRangeArray": []
+  },
+  "edge-feather": {
+   "featherRadius": 2
+  },
+  "inner-shadow": {
+   "innerShadowAngle": 135,
+   "innerShadowDistance": 15,
+   "innerShadowOffsetX": 30,
+   "innerShadowOffsetY": 30,
+   "innerShadowBlur": 10,
+   "innerShadowColor": "#000000"
+  },
+  "twirl": {
+   "twirlType": "galaxy",
+   "twirlFactor": 0,
+   "twirlRadiusPercent": 30,
+   "twirlCenterXPercent": 50,
+   "twirlCenterYPercent": 50,
+   "inTwirl": false,
+   "inTwirlDuration": 1,
+   "outTwirl": false,
+   "outTwirlDuration": 1
+  },
+  "clip-speed": {
+   "playbackRate": 1
+  },
+  "reveal": {
+   "enabled": true,
+   "reveal": true,
+   "conceal": false
+  },
+  "doodle": {
+   "drawing": {
+    "handImagePath": "/hands/hand-01.png",
+    "mode": "automatic",
+    "duration": 1,
+    "handShow": true,
+    "handShakingPercent": 30,
+    "handImageScale": 0.7,
+    "doodleActive": true,
+    "renderHandOnTop": true,
+    "animationPercent": 0,
+    "editingPath": false
+   },
+   "erasing": {
+    "handImagePath": "/erasers/eraser-01.png",
+    "mode": "automatic",
+    "duration": 1,
+    "handShow": true,
+    "handShakingPercent": 30,
+    "handImageScale": 0.7,
+    "doodleActive": false,
+    "renderHandOnTop": true,
+    "animationPercent": 0,
+    "editingPath": false
+   }
+  }
+ },
+ "button": {
+  "objType": "button",
+  "name": "Button",
+  "width": 603.6446469248292,
+  "height": 144.5556580732699,
+  "fill": "rgba(255,0,38,1)",
+  "stroke": "black",
+  "strokeWidth": 0,
+  "text": "Subscribe",
+  "trCornerRadius": 28.635357947351622,
+  "tlCornerRadius": 28.635357947351622,
+  "brCornerRadius": 28.635357947351622,
+  "blCornerRadius": 28.635357947351622,
+  "textFill": "white",
+  "charSpacing": 13.072860616740092,
+  "lineHeight": 1,
+  "fontSize": 74,
+  "textPaddingTop": 30.467829036634967,
+  "textPaddingBottom": 30.467829036634967,
+  "textPaddingLeft": 50,
+  "textPaddingRight": 50,
+  "font": {
+   "family": {
+    "name": "Archivo Black",
+    "folder": "Archivo-Black",
+    "variants": [
+     {
+      "name": "Regular",
+      "file": "ArchivoBlack-Regular.ttf"
+     }
+    ]
+   },
+   "variant": {
+    "name": "Regular",
+    "file": "ArchivoBlack-Regular.ttf"
+   }
+  },
+  "fontFamily": "Archivo Black Regular",
+  "textAlign": "center",
+  "underline": false,
+  "overline": false,
+  "linethrough": false,
+  "textDirection": "ltr"
+ },
+ "textbox": {
+  "objType": "button",
+  "isTextBox": true,
+  "name": "Text Box",
+  "scaleX": 0.8,
+  "scaleY": 0.8,
+  "width": 1540,
+  "height": 151,
+  "fill": "rgba(0,0,0,0.89)",
+  "stroke": "black",
+  "strokeWidth": 0,
+  "text": "JUST TYPE HERE TO EDIT TEXT",
+  "trCornerRadius": 0,
+  "tlCornerRadius": 0,
+  "brCornerRadius": 0,
+  "blCornerRadius": 0,
+  "textFill": "white",
+  "charSpacing": 10,
+  "lineHeight": 1.2,
+  "fontSize": 80,
+  "textPaddingTop": 30.467829036634967,
+  "textPaddingBottom": 30.467829036634967,
+  "textPaddingLeft": 50,
+  "textPaddingRight": 50,
+  "font": {
+   "family": {
+    "name": "Archivo Black",
+    "folder": "Archivo-Black",
+    "variants": [
+     {
+      "name": "Regular",
+      "file": "ArchivoBlack-Regular.ttf"
+     }
+    ]
+   },
+   "variant": {
+    "name": "Regular",
+    "file": "ArchivoBlack-Regular.ttf"
+   }
+  },
+  "fontFamily": "Archivo Black Regular",
+  "textAlign": "center",
+  "underline": false,
+  "overline": false,
+  "linethrough": false,
+  "textDirection": "ltr"
+ },
+ "typewriter": {
+  "objType": "typewriter",
+  "name": "Typewriter",
+  "text": "Your text",
+  "fill": "transparent",
+  "textFill": "black",
+  "fontSize": 100,
+  "charSpacing": 13,
+  "lineHeight": 1,
+  "canBeMask": false,
+  "trCornerRadius": 0,
+  "tlCornerRadius": 0,
+  "brCornerRadius": 0,
+  "blCornerRadius": 0,
+  "font": {
+   "family": {
+    "name": "Archivo Black",
+    "folder": "Archivo-Black",
+    "variants": [
+     {
+      "name": "Regular",
+      "file": "ArchivoBlack-Regular.ttf"
+     }
+    ]
+   },
+   "variant": {
+    "name": "Regular",
+    "file": "ArchivoBlack-Regular.ttf"
+   }
+  },
+  "fontFamily": "Archivo Black Regular",
+  "textAlign": "left",
+  "originX": 0,
+  "originY": 0,
+  "textDirection": "ltr",
+  "sentenceArrayInfo": [
+   {
+    "id": "a7eb5bdd-e313-4f97-8475-0dfcd436eb55",
+    "typingDuration": 1.5,
+    "pauseDelayBeforeDelete": 1,
+    "deletingDuration": 1.4,
+    "pauseDelayAfterDelete": 1,
+    "text": "Type your text here...",
+    "typingSound": "keyboard4",
+    "deletingSound": "keyboard-backspace",
+    "volume": 0.3
+   },
+   {
+    "id": "ca6fd699-1c9b-462a-a0a7-1d1bd90f7ccf",
+    "typingDuration": 1.5,
+    "pauseDelayBeforeDelete": 1,
+    "deletingDuration": 1.4,
+    "pauseDelayAfterDelete": 1,
+    "text": "Type your secondary text here...",
+    "typingSound": "keyboard4",
+    "deletingSound": "keyboard-backspace",
+    "volume": 0.3
+   }
+  ],
+  "delayBeforeDelete": 1,
+  "delayAfterDelete": 1,
+  "cursorOffset": 8,
+  "cursorWidth": 5,
+  "cursorColor": "#000000",
+  "typingSound": "keyboard4",
+  "deletingSound": "keyboard-backspace",
+  "volume": 0.3,
+  "keepCursorWhenFinish": true,
+  "left": -625,
+  "top": -40,
+  "scaleX": 0.7,
+  "scaleY": 0.7
+ },
+ "textCountdown": {
+  "objType": "text-countdown",
+  "name": "Number Counter",
+  "text": "0",
+  "startNumber": 0,
+  "endNumber": 10,
+  "animationDuration": 3,
+  "animationEase": "none",
+  "fill": "#000000",
+  "fontSize": 100,
+  "charSpacing": 13,
+  "lineHeight": 1,
+  "canBeMask": false,
+  "trCornerRadius": 0,
+  "tlCornerRadius": 0,
+  "brCornerRadius": 0,
+  "blCornerRadius": 0,
+  "font": {
+   "family": {
+    "name": "Archivo Black",
+    "folder": "Archivo-Black",
+    "variants": [
+     {
+      "name": "Regular",
+      "file": "ArchivoBlack-Regular.ttf"
+     }
+    ]
+   },
+   "variant": {
+    "name": "Regular",
+    "file": "ArchivoBlack-Regular.ttf"
+   }
+  },
+  "fontFamily": "Archivo Black Regular",
+  "textAlign": "left",
+  "originX": 0.5,
+  "originY": 0.5,
+  "textDirection": "ltr",
+  "left": 0,
+  "top": 0,
+  "scaleX": 3,
+  "scaleY": 3
+ },
+ "textRandomReveal": {
+  "objType": "text-random-reveal",
+  "name": "Random Reveal",
+  "text": "Your Text",
+  "seed": 2836523,
+  "randomCharacters": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+  "animationDuration": 3,
+  "animationEase": "none",
+  "textUpdateFrameInterval": 1,
+  "fill": "#000000",
+  "textFill": "black",
+  "fontSize": 100,
+  "charSpacing": 13,
+  "lineHeight": 1,
+  "canBeMask": false,
+  "trCornerRadius": 0,
+  "tlCornerRadius": 0,
+  "brCornerRadius": 0,
+  "blCornerRadius": 0,
+  "font": {
+   "family": {
+    "name": "Azeret Mono",
+    "folder": "Azeret-Mono",
+    "variants": [
+     {
+      "name": "Black",
+      "file": "AzeretMono-Black.ttf"
+     },
+     {
+      "name": "Black Italic",
+      "file": "AzeretMono-BlackItalic.ttf"
+     },
+     {
+      "name": "Bold",
+      "file": "AzeretMono-Bold.ttf"
+     },
+     {
+      "name": "Bold Italic",
+      "file": "AzeretMono-BoldItalic.ttf"
+     },
+     {
+      "name": "Extra Bold",
+      "file": "AzeretMono-ExtraBold.ttf"
+     },
+     {
+      "name": "Extra Bold Italic",
+      "file": "AzeretMono-ExtraBoldItalic.ttf"
+     },
+     {
+      "name": "Extra Light",
+      "file": "AzeretMono-ExtraLight.ttf"
+     },
+     {
+      "name": "Extra Light Italic",
+      "file": "AzeretMono-ExtraLightItalic.ttf"
+     },
+     {
+      "name": "Italic",
+      "file": "AzeretMono-Italic.ttf"
+     },
+     {
+      "name": "Light",
+      "file": "AzeretMono-Light.ttf"
+     },
+     {
+      "name": "Light Italic",
+      "file": "AzeretMono-LightItalic.ttf"
+     },
+     {
+      "name": "Medium",
+      "file": "AzeretMono-Medium.ttf"
+     },
+     {
+      "name": "Medium Italic",
+      "file": "AzeretMono-MediumItalic.ttf"
+     },
+     {
+      "name": "Regular",
+      "file": "AzeretMono-Regular.ttf"
+     },
+     {
+      "name": "Semi Bold",
+      "file": "AzeretMono-SemiBold.ttf"
+     },
+     {
+      "name": "Semi Bold Italic",
+      "file": "AzeretMono-SemiBoldItalic.ttf"
+     },
+     {
+      "name": "Thin",
+      "file": "AzeretMono-Thin.ttf"
+     },
+     {
+      "name": "Thin Italic",
+      "file": "AzeretMono-ThinItalic.ttf"
+     }
+    ]
+   },
+   "variant": {
+    "name": "Regular",
+    "file": "AzeretMono-Regular.ttf"
+   }
+  },
+  "fontFamily": "Azeret Mono Regular",
+  "textAlign": "left",
+  "originX": 0.5,
+  "originY": 0.5,
+  "textDirection": "ltr",
+  "left": 0,
+  "top": 0,
+  "scaleX": 2,
+  "scaleY": 2
+ },
+ "infiniteScroll": {
+  "objType": "infinite-scroll",
+  "name": "Infinite Scroll",
+  "speed": 15,
+  "text": "Type your text here & adjust the settings to create your very own endless text scroller in seconds.",
+  "fill": "red",
+  "textFill": "white",
+  "charSpacing": 13,
+  "lineHeight": 1,
+  "canBeMask": false,
+  "width": 1200,
+  "height": 150,
+  "scrollingPaddingPercent": 25,
+  "scrollingMarginRepeatedFactor": 3,
+  "trCornerRadius": 0,
+  "tlCornerRadius": 0,
+  "brCornerRadius": 0,
+  "blCornerRadius": 0,
+  "font": {
+   "family": {
+    "name": "Archivo Black",
+    "folder": "Archivo-Black",
+    "variants": [
+     {
+      "name": "Regular",
+      "file": "ArchivoBlack-Regular.ttf"
+     }
+    ]
+   },
+   "variant": {
+    "name": "Regular",
+    "file": "ArchivoBlack-Regular.ttf"
+   }
+  },
+  "fontFamily": "Archivo Black Regular",
+  "textAlign": "left",
+  "backward": false,
+  "textDirection": "ltr"
+ },
+ "transitions": {
+  "objType": "transitions",
+  "width": 1280,
+  "height": 720
+ }
+}

@@ -1,0 +1,34 @@
+const WebSocket = require('D:/workspaces/OMD_dash/dash.ohmydog.rocks/node_modules/ws');
+const http = require('http');
+http.get('http://127.0.0.1:9222/json', res => { let b=''; res.on('data', d=>b+=d); res.on('end', () => {
+  const page = JSON.parse(b).find(p => p.type==='page');
+  const ws = new WebSocket(page.webSocketDebuggerUrl);
+  let id = 0; const pending = {};
+  const send = (method, params={}) => new Promise(r => { const i=++id; pending[i]=r; ws.send(JSON.stringify({id:i,method,params})); });
+  ws.on('message', m => { const j = JSON.parse(m); if (pending[j.id]) pending[j.id](j.result); });
+  ws.on('open', async () => {
+    const ev = async expr => { const r = await send('Runtime.evaluate', {expression: expr, returnByValue: true, awaitPromise: true}); return r.result ? (r.result.value ?? r.result.description) : JSON.stringify(r); };
+    const GP = `document.querySelector('#app').__vue_app__.config.globalProperties`;
+    const keysOf = (o) => `(()=>{const o=${o}; if(!o) return 'undefined'; const ks=new Set(); let p=o; while(p&&p!==Object.prototype){Object.getOwnPropertyNames(p).forEach(k=>ks.add(k)); p=Object.getPrototypeOf(p);} return JSON.stringify([...ks].filter(k=>k!=='constructor').slice(0,200))})()`;
+    console.log('publishingFormats:', await ev(`JSON.stringify(${GP}.$settings.publishingFormats)`));
+    console.log('resolutions:', await ev(`JSON.stringify(${GP}.$settings.resolutions)`));
+    console.log('system:', await ev(`JSON.stringify(${GP}.$settings.system).slice(0,1500)`));
+    console.log('canvas:', await ev(`JSON.stringify(${GP}.$settings.canvas).slice(0,800)`));
+    console.log('animationProperties keys:', await ev(`JSON.stringify(Object.keys(${GP}.$settings.animationProperties||{}))`));
+    console.log('effects:', await ev(`JSON.stringify(${GP}.$settings.effects).slice(0,800)`));
+    console.log('transitionCategories:', await ev(`JSON.stringify(${GP}.$settings.transitionCategories).slice(0,600)`));
+    console.log('helpers.media:', await ev(keysOf(`${GP}.$helpers.media`)));
+    console.log('helpers.timeline:', await ev(keysOf(`${GP}.$helpers.timeline`)));
+    console.log('helpers.text:', await ev(keysOf(`${GP}.$helpers.text`)));
+    console.log('helpers.fonts:', await ev(keysOf(`${GP}.$helpers.fonts`)));
+    console.log('helpers.group:', await ev(keysOf(`${GP}.$helpers.group`)));
+    console.log('helpers.colors:', await ev(keysOf(`${GP}.$helpers.colors`)));
+    console.log('isTrial/isUserActive/aapActive:', await ev(`(()=>{const h=${GP}.$helpers; const t=f=>{try{return String(f())}catch(e){return 'err:'+e.message}}; return JSON.stringify({isTrial:t(()=>h.isTrial()), isUserActive:t(()=>h.isUserActive()), aapActive:t(()=>h.aapActive()), isAdmin:t(()=>h.isAdmin())})})()`));
+    console.log('userSettings all keys:', await ev(`(()=>{const u=${GP}.$userSettings; try{const all=u.getSync(); return JSON.stringify(Object.keys(all))}catch(e){return 'err '+e.message}})()`));
+    console.log('userSettings.file:', await ev(`JSON.stringify(${GP}.$userSettings.file)`));
+    console.log('takeProjectSnapshot src:', await ev(`${GP}.$helpers.takeProjectSnapshot.toString().slice(0,600)`));
+    console.log('changeResolution src:', await ev(`${GP}.$helpers.changeResolution.toString().slice(0,400)`));
+    ws.close(); process.exit(0);
+  });
+});});
+setTimeout(()=>{console.log('TIMEOUT');process.exit(1)}, 30000);

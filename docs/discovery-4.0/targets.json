@@ -1,0 +1,11 @@
+[
+ {
+  "description": "",
+  "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:9223/devtools/page/5795F2C0738515DFE3F6AA56D1EF55D9",
+  "id": "5795F2C0738515DFE3F6AA56D1EF55D9",
+  "title": "CreateStudio 4",
+  "type": "page",
+  "url": "file:///login",
+  "webSocketDebuggerUrl": "ws://127.0.0.1:9223/devtools/page/5795F2C0738515DFE3F6AA56D1EF55D9"
+ }
+]

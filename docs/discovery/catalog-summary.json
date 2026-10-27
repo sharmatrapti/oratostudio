@@ -1,0 +1,311 @@
+{
+ "total": 19876,
+ "byType": {
+  "template": 1855,
+  "sprite": 274,
+  "video": 2377,
+  "preset": 8538,
+  "audio": 2062,
+  "image": 4057,
+  "svg": 651,
+  "reveal": 47,
+  "model": 15
+ },
+ "allFields": [
+  "id",
+  "type",
+  "stamp",
+  "name",
+  "tags",
+  "keys",
+  "themes",
+  "duration",
+  "transparent",
+  "version",
+  "fullWidth",
+  "subSubCategory",
+  "downloading",
+  "downloadingConnected",
+  "progress",
+  "free",
+  "popular",
+  "variants",
+  "cat",
+  "subCat",
+  "background"
+ ],
+ "premiumFields": [
+  "progress",
+  "free"
+ ],
+ "mainCategories": [
+  {
+   "code": "templates",
+   "name": "Templates",
+   "isStudio": false,
+   "subcats": 8,
+   "items": 1855
+  },
+  {
+   "code": "characters",
+   "name": "Characters",
+   "isStudio": true,
+   "subcats": 10,
+   "items": 337
+  },
+  {
+   "code": "audio",
+   "name": "Audio",
+   "isStudio": false,
+   "subcats": 17,
+   "items": 2062
+  },
+  {
+   "code": "transitions",
+   "name": "Transitions",
+   "isStudio": true,
+   "subcats": 11,
+   "items": 202
+  },
+  {
+   "code": "titles",
+   "name": "Titles",
+   "isStudio": true,
+   "subcats": 6,
+   "items": 151
+  },
+  {
+   "code": "scenes",
+   "name": "Scenes",
+   "isStudio": false,
+   "subcats": 0,
+   "items": 0
+  },
+  {
+   "code": "backgrounds",
+   "name": "Backgrounds",
+   "isStudio": true,
+   "subcats": 9,
+   "items": 994
+  },
+  {
+   "code": "doodle",
+   "name": "Doodle",
+   "isStudio": true,
+   "subcats": 5,
+   "items": 475
+  },
+  {
+   "code": "effects",
+   "name": "Effects",
+   "isStudio": true,
+   "subcats": 10,
+   "items": 223
+  },
+  {
+   "code": "icons",
+   "name": "Icons",
+   "isStudio": true,
+   "subcats": 15,
+   "items": 3476
+  },
+  {
+   "code": "shapes",
+   "name": "Shapes",
+   "isStudio": true,
+   "subcats": 5,
+   "items": 334
+  },
+  {
+   "code": "scroll-stoppers",
+   "name": "Scroll Stoppers",
+   "isStudio": true,
+   "subcats": 2,
+   "items": 213
+  },
+  {
+   "code": "stickers",
+   "name": "Stickers",
+   "isStudio": true,
+   "subcats": 7,
+   "items": 403
+  },
+  {
+   "code": "vfx",
+   "name": "Video FX",
+   "isStudio": true,
+   "subcats": 15,
+   "items": 478
+  },
+  {
+   "code": "hands",
+   "name": "Hands",
+   "isStudio": true,
+   "subcats": 4,
+   "items": 106
+  },
+  {
+   "code": "social-media",
+   "name": "Social Media",
+   "isStudio": true,
+   "subcats": 3,
+   "items": 184
+  },
+  {
+   "code": "reveal",
+   "name": "Reveal",
+   "isStudio": false,
+   "subcats": 1,
+   "items": 47
+  },
+  {
+   "code": "elements",
+   "name": "Elements",
+   "isStudio": true,
+   "subcats": 3,
+   "items": 65
+  },
+  {
+   "code": "video-builder",
+   "name": "Video Builder",
+   "isStudio": false,
+   "subcats": 10,
+   "items": 399
+  },
+  {
+   "code": "video-builder-standard",
+   "name": "Video Builder Standard",
+   "isStudio": false,
+   "subcats": 116,
+   "items": 2552
+  },
+  {
+   "code": "video-builder-vertical",
+   "name": "Video Builder Vertical",
+   "isStudio": false,
+   "subcats": 109,
+   "items": 2353
+  },
+  {
+   "code": "video-builder-square",
+   "name": "Video Builder Square",
+   "isStudio": false,
+   "subcats": 109,
+   "items": 2420
+  },
+  {
+   "code": "youtube",
+   "name": "Youtube",
+   "isStudio": true,
+   "subcats": 4,
+   "items": 58
+  },
+  {
+   "code": "3dcharacters",
+   "name": "_3DCharacters",
+   "isStudio": false,
+   "subcats": 1,
+   "items": 15
+  },
+  {
+   "code": "boost",
+   "name": "Boost Elements",
+   "isStudio": true,
+   "subcats": 10,
+   "items": 442
+  },
+  {
+   "code": "cta",
+   "name": "Call To Actions",
+   "isStudio": false,
+   "subcats": 4,
+   "items": 32
+  }
+ ],
+ "subSubCategories": [
+  "Characters",
+  "Intro",
+  "Problem",
+  "Solution",
+  "Subscribes",
+  "Benefits",
+  "Openers",
+  "Call to Action",
+  "Outros",
+  "Openers",
+  "Transitions",
+  "Transitions",
+  "Product Offers",
+  "Backgrounds",
+  "Other",
+  "Other",
+  "Raw Scenes",
+  "Lower Thirds",
+  "Endings",
+  "Alphabet"
+ ],
+ "downloaded": 43,
+ "topThemes": [
+  [
+   "Stylish",
+   103
+  ],
+  [
+   "Stick Man",
+   86
+  ],
+  [
+   "Retro Collection",
+   69
+  ],
+  [
+   "Creative Portfolio",
+   63
+  ],
+  [
+   "Company",
+   63
+  ],
+  [
+   "Bright",
+   63
+  ],
+  [
+   "Jack",
+   61
+  ],
+  [
+   "Minimal 2",
+   60
+  ],
+  [
+   "Modern",
+   60
+  ],
+  [
+   "Marketing",
+   60
+  ],
+  [
+   "Church",
+   60
+  ],
+  [
+   "Digital Marketing",
+   60
+  ],
+  [
+   "Colorful",
+   60
+  ],
+  [
+   "Summer",
+   59
+  ],
+  [
+   "Scrap Book",
+   57
+  ]
+ ],
+ "sample": "{\"id\":\"elt3gafgcw\",\"type\":\"template\",\"stamp\":1766059909000,\"name\":\"Tasty Cake\",\"tags\":\"bakery, sweet cake, chocolate cake, dessert, baking, pastry, 50% off, discount, sale, 3D character, woman in apron, baker, pink apron, delicious, food promotion, bakery flyer, social media ad, heart pattern, lilac background\",\"keys\":[],\"themes\":[],\"duration\":15,\"version\":1,\"fullWidth\":true,\"downloading\":false,\"downloadingConnected\":false,\"progress\":0,\"free\":0,\"popular\":0,\"variants\":[\"square\",\"vertical\"],\"cat\":1,\"subCat\":154}"
+}

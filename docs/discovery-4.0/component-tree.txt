@@ -1,0 +1,14 @@
+AppName | data:  | setup: appUi,user,dialog | methods: 
+ UiTooltipProvider | data:  | setup:  | methods: 
+  TooltipProvider | data:  | setup:  | methods: 
+   AutoUpdateDialogs | data:  | setup: card | methods: 
+   anon | data: offline | setup:  | methods: onOnline,onOffline
+   RouterView | data:  | setup:  | methods: 
+    anon | data: isMounted,maxInstallations,firstName,lastName,emailAddress,password,passwordConfirmation,occupation,recoveryCode,verificationCode,agreeTermsAndService,status,performingAction,errorMessage,isLicenseExpired,showPassword,showPlans | setup:  | methods: closePlans,toggleShowPassword,clickOpenTermsOfService,clickOpenPrivacyPolicy,clickGoSignIn,clickCreateAccount,clickConfirmAccount,clickGoSignUp,clickSignIn,clickSendRecoveryCode,clickChangePassword,clickRecoverPassword,clickForgotPassword,isValidEmail,clearParameters,showAxiosError,getOpsSys,loginRoutine,initializeUnleashFeatureFlags,onKeyDown
+     anon | data:  | setup:  | methods: closeApp,maximizeApp,minimizeApp
+   anon | data:  | setup:  | methods: 
+   anon | data: isVisible,currentTransitions,scene,showFavorite,favorites,keyword,applyToAll,itemOver | setup:  | methods: getThumb,getVideo,play,pause,showNew,checkKeyword,toggleFavorite,toggleItemFavorite,isFavorite,loadFavorites,toggleApplyToAll,show,hide,onEscPressed,clickSelectTransition,initializeCanvases
+    anon | data: newValue,onValue | setup:  | methods: toggle,setValue,emitChange
+   Notification | data:  | setup:  | methods: 
+   anon | data:  | setup: refreshAiCreditsAfterCheckout | methods: handleBuyNowClick
+   anon | data:  | setup:  | methods: 
